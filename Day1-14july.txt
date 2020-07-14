@@ -1,0 +1,385 @@
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra
+$ git init
+Initialized empty Git repository in E:/Tranning/Day1-14july-pra/.git/
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ code README.md
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git config --edit --global
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ code README.md
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ code index.html
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        index.html
+		
+		nothing added to commit but untracked files present (use "git add" to track)
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git add .
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   index.html
+		
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ ls
+index.html  README.md
+		
+		
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git log
+commit 77272110c72a0f9a9e756692104c28cb6744c93f (HEAD -> master)
+Author: Dipanjan Das <dipanjan.das@zensar.com>
+Date:   Tue Jul 14 20:22:13 2020 +0530
+
+    Add README.md and index.html file
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git log --oneline
+7727211 (HEAD -> master) Add README.md and index.html file
+
+// modfication 
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ code index.html
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git add .
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git commit -m"Add README.md and modify index.html file "
+[master ce27aeb] Add README.md and modify index.html file
+ 1 file changed, 2 insertions(+)
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git log
+commit ce27aebe5357984f14ec1341c6b43920ff188177 (HEAD -> master)
+Author: Dipanjan Das <dipanjan.das@zensar.com>
+Date:   Tue Jul 14 20:46:52 2020 +0530
+
+    Add README.md and modify index.html file
+
+commit 77272110c72a0f9a9e756692104c28cb6744c93f
+Author: Dipanjan Das <dipanjan.das@zensar.com>
+Date:   Tue Jul 14 20:22:13 2020 +0530
+
+    Add README.md and index.html file
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git log --oneline
+ce27aeb (HEAD -> master) Add README.md and modify index.html file
+7727211 Add README.md and index.html file
+
+
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git commit -m"Add README.md and index.html file "
+[master (root-commit) 7727211] Add README.md and index.html file
+ 2 files changed, 21 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 index.html
+ 
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git remote add origin https://github.com/Dipanjan59173/prc-dipanjan.git
+
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 852 bytes | 852.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Dipanjan59173/prc-dipanjan.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+// creating a new branch
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ get checkout -b "add"
+bash: get: command not found
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git checkout -b "add"
+Switched to a new branch 'add'
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ ls
+index.html  README.md
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ code style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ ls
+index.html  README.md  style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ git add .
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ git commit -m"add a new style.css file"
+[add 22d4f2d] add a new style.css file
+ 1 file changed, 7 insertions(+)
+ create mode 100644 style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ ls
+index.html  README.md  style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ git log
+commit 22d4f2df9f32cd2d3e2d56082365a909615d8017 (HEAD -> add)
+Author: Dipanjan Das <dipanjan.das@zensar.com>
+Date:   Tue Jul 14 21:16:09 2020 +0530
+
+    add a new style.css file
+
+commit ce27aebe5357984f14ec1341c6b43920ff188177 (origin/master, master)
+Author: Dipanjan Das <dipanjan.das@zensar.com>
+Date:   Tue Jul 14 20:46:52 2020 +0530
+
+    Add README.md and modify index.html file
+
+commit 77272110c72a0f9a9e756692104c28cb6744c93f
+Author: Dipanjan Das <dipanjan.das@zensar.com>
+Date:   Tue Jul 14 20:22:13 2020 +0530
+
+    Add README.md and index.html file
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ git log --oneline
+22d4f2d (HEAD -> add) add a new style.css file
+ce27aeb (origin/master, master) Add README.md and modify index.html file
+7727211 Add README.md and index.html file
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add)
+$ git status
+On branch add
+nothing to commit, working tree clean
+
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git diff master add
+diff --git a/style.css b/style.css
+new file mode 100644
+index 0000000..fa76ffb
+--- /dev/null
++++ b/style.css
+@@ -0,0 +1,7 @@
++body{
++    background-color: blue;
++    font-style: italic;
++    font-size: medium;
++}
++h2{color: chartreuse;}
++h4{color: cadetblue;}
+
+
+
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git merge add
+Updating ce27aeb..22d4f2d
+Fast-forward
+ style.css | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ ls
+index.html  README.md  style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git checkout -b "add1"
+Switched to a new branch 'add1'
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ git hello.c
+git: 'hello.c' is not a git command. See 'git --help'.
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ code hello.c
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ ls
+hello.c  index.html  README.md  style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ ls
+hello.c  index.html  README.md  style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ code style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git add .
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git commit -m " modifcation in style.css file and add hello.c in add1"
+[master d4cc7d4]  modifcation in style.css file and add hello.c in add1
+ 2 files changed, 6 insertions(+)
+ create mode 100644 hello.c
+
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git log --oneline
+d4cc7d4 (HEAD -> master)  modifcation in style.css file and add hello.c in add1
+22d4f2d (add1, add) add a new style.css file
+ce27aeb (origin/master) Add README.md and modify index.html file
+7727211 Add README.md and index.html file
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git checkout add1
+Switched to branch 'add1'
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ ls
+index.html  README.md  style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ ls
+hello.c  index.html  README.md  style.css
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git checkout add1
+Switched to branch 'add1'
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ code java1.java
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ git add .
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ git commit -m"add a new java1.java file"
+[add1 2a91671] add a new java1.java file
+ 1 file changed, 5 insertions(+)
+ create mode 100644 java1.java
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ git status
+On branch add1
+nothing to commit, working tree clean
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (add1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git merge add1
+Merge made by the 'recursive' strategy.
+ java1.java | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 java1.java
+
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git log --oneline --graph --decorate
+*   6c5a9ea (HEAD -> master) Merge branch 'add1'
+|\
+| * 2a91671 (add1) add a new java1.java file
+* | d4cc7d4  modifcation in style.css file and add hello.c in add1
+|/
+* 22d4f2d (add) add a new style.css file
+* ce27aeb (origin/master) Add README.md and modify index.html file
+* 7727211 Add README.md and index.html file
+
+//TO move files from local to remote directory.
+
+dipan@DESKTOP-I047OES MINGW64 /e/Tranning/Day1-14july-pra (master)
+$ git push -u origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.23 KiB | 1.23 MiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/Dipanjan59173/prc-dipanjan.git
+   ce27aeb..6c5a9ea  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
